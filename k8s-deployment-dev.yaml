@@ -21,20 +21,11 @@ spec:
         app.kubernetes.io/name: snyky
         app.kubernetes.io/instance: snyky
     spec:
-      hostAliases:
-      - ip: "127.0.0.1"
-        hostnames:
-        - "foo.local"
-        - "bar.local"
-      - ip: "10.1.2.3"
-        hostnames:
-        - "foo.remote"
-        - "bar.remote"
-      hostPID: true
+      hostPID: false
       containers:
         - name: snyky1
           image: "garethr/snyky1:latest"
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 5000
@@ -48,10 +39,12 @@ spec:
               path: /
               port: http
           resources:
-            {}
+            limits:
+              cpu: 100
+              memory: 100
         - name: snyky2
           image: "garethr/snyky2:latest"
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 5000
@@ -65,24 +58,22 @@ spec:
               path: /
               port: http
           resources:
-            # limits:
-              # cpu: 100
-              # memory: 100
+            limits:
+              cpu: 100
+              memory: 100
           securityContext:
-            readOnlyRootFilesystem: false
-            allowPrivilegeEscalation: true
-            # runAsNonRoot: true
-            runAsUser: 1
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            runAsUser: 10001
             privileged: false
             capabilities:
-              # drop:
-                # - all
+              drop:
+                - ALL
               add:
                 - CAP_SYS_ADMIN
       volumes:
         - name: devices
-          hostPath:
-            path: /dev/
         - name: dockersock
 
             

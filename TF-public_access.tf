@@ -9,6 +9,9 @@ resource "aws_db_instance" "db" {
   username             = "foo"
   password             = "foobarbaz"
   parameter_group_name = "default.mysql5.7"
+  storage_encrypted    = true
+  iam_database_authentication_enabled = true
+  backup_retention_period = 1
 }
 
 resource "aws_dms_replication_instance" "db" {
@@ -90,4 +93,5 @@ resource "aws_redshift_cluster" "redshift" {
   node_type          = "dc1.large"
   cluster_type       = "single-node"
   publicly_accessible = false
+  encrypted          = true
 }
