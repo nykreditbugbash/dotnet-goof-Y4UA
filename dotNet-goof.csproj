@@ -17,17 +17,18 @@
     <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.0.0" />
     <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="150.18147.0" />
-    <PackageReference Include="Microsoft.Win32.Registry" Version="4.5.0" />
+  <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
     <PackageReference Include="NHibernate" Version="5.2.6" />
     <PackageReference Include="microsoft.aspnetcore.app.runtime.win-x86" Version="3.0.0" />
     <PackageReference Include="NLog" Version="4.6.7" />
     <PackageReference Include="System.CodeDom" Version="4.5.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+  <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.DirectoryServices" Version="4.5.0" />
     <PackageReference Include="System.DirectoryServices.AccountManagement" Version="4.5.0" />
     <PackageReference Include="System.DirectoryServices.Protocols" Version="4.5.0" />
     <PackageReference Include="System.Linq.Dynamic" Version="1.0.8" />
     <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
+  <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
     <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.2" />
@@ -44,7 +45,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
-    <PackageReference Include="kentico.xperience.libraries" Version="13.0.173" />
+  <PackageReference Include="kentico.xperience.libraries" Version="13.0.178" />
     <PackageReference Include="youtubedlsharp" Version="1.2.2" />
     <PackageReference Include="dotnetnuke.core" Version="7.4.1.280" />
     <PackageReference Include="microsoft.aspnetcore.app.runtime.linux-x64" Version="8.0.0" />

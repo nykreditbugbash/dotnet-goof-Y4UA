@@ -431,7 +431,7 @@
           }
         }
       },
-      "Kentico.Xperience.Libraries/13.0.173": {
+      "Kentico.Xperience.Libraries/13.0.178": {
         "type": "package",
         "dependencies": {
           "AWSSDK.Core": "3.5.1.13",
@@ -3137,11 +3137,11 @@
           }
         }
       },
-      "Microsoft.Win32.Registry/4.5.0": {
+      "Microsoft.Win32.Registry/4.7.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.AccessControl": "4.5.0",
-          "System.Security.Principal.Windows": "4.5.0"
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -3149,7 +3149,9 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -3499,7 +3501,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.5.0": {
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -4063,13 +4065,12 @@
           }
         }
       },
-      "System.Data.SqlClient/4.6.1": {
+      "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.Registry": "4.5.0",
-          "System.Security.Principal.Windows": "4.5.0",
-          "System.Text.Encoding.CodePages": "4.5.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.5.0"
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -4077,7 +4078,9 @@
           }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -5983,29 +5986,24 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/6.0.0": {
+      "System.Text.Encoding.CodePages/8.0.0": {
         "type": "package",
         "dependencies": {
+          "System.Memory": "4.5.5",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets": {}
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
@@ -6982,16 +6980,16 @@
         "lib/netstandard1.3/Iesi.Collections.xml"
       ]
     },
-    "Kentico.Xperience.Libraries/13.0.173": {
-      "sha512": "tWsi+XuKJsGfU/SmU5n8xUJ1dL73Vg36tHwYfnpACOmUAFwqZ5HuetKi2C94IPYCaiOF7pdGOllRMwf6NIIfYw==",
+    "Kentico.Xperience.Libraries/13.0.178": {
+      "sha512": "WGwEVykAFpdJywpY3kcQ6MXe4MBn2BMnrrNIt7GfXM7/n9yR5vrCKNI/KXvrZLtlZL4YBOFl1j6NhKRLWm78mg==",
       "type": "package",
-      "path": "kentico.xperience.libraries/13.0.173",
+      "path": "kentico.xperience.libraries/13.0.178",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LicenseAgreement.txt",
-        "kentico.xperience.libraries.13.0.173.nupkg.sha512",
+        "kentico.xperience.libraries.13.0.178.nupkg.sha512",
         "kentico.xperience.libraries.nuspec",
         "lib/net48/CMS.Activities.Loggers.dll",
         "lib/net48/CMS.Activities.Loggers.xml",
@@ -9662,10 +9660,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Win32.Registry/4.5.0": {
-      "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
+    "Microsoft.Win32.Registry/4.7.0": {
+      "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "type": "package",
-      "path": "microsoft.win32.registry/4.5.0",
+      "path": "microsoft.win32.registry/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9673,13 +9671,17 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/Microsoft.Win32.Registry.dll",
         "lib/net461/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.xml",
         "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "microsoft.win32.registry.4.5.0.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "microsoft.win32.registry.4.7.0.nupkg.sha512",
         "microsoft.win32.registry.nuspec",
         "ref/net46/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.xml",
+        "ref/net472/Microsoft.Win32.Registry.dll",
+        "ref/net472/Microsoft.Win32.Registry.xml",
         "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
         "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
         "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
@@ -9694,10 +9696,13 @@
         "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
         "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
         "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.xml",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -11279,16 +11284,16 @@
         "runtime.native.system.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.5.0": {
-      "sha512": "AJfX7owAAkMjWQYhoml5IBfXh8UyYPjktn8pK0BFGAdKgBS7HqMz1fw5vdzfZUWfhtTPDGCjgNttt46ZyEmSjg==",
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
-      "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
+        "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
         "runtime.native.system.data.sqlclient.sni.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12285,13 +12290,14 @@
         "system.data.hashfunction.interfaces.nuspec"
       ]
     },
-    "System.Data.SqlClient/4.6.1": {
-      "sha512": "7MTJhBFt4/tSJ2VRpG+TQNPcDdbCnWuoYzbe0kD5O3mQ7aZ2Q+Q3D9Y5Y3/aper5Gp3Lrs+8edk9clvxyPYXPw==",
+    "System.Data.SqlClient/4.8.6": {
+      "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
-      "path": "system.data.sqlclient/4.6.1",
+      "path": "system.data.sqlclient/4.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -12299,10 +12305,15 @@
         "lib/net451/System.Data.SqlClient.dll",
         "lib/net46/System.Data.SqlClient.dll",
         "lib/net461/System.Data.SqlClient.dll",
+        "lib/net461/System.Data.SqlClient.xml",
         "lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "lib/netstandard1.2/System.Data.SqlClient.dll",
+        "lib/netstandard1.2/System.Data.SqlClient.xml",
         "lib/netstandard1.3/System.Data.SqlClient.dll",
+        "lib/netstandard1.3/System.Data.SqlClient.xml",
         "lib/netstandard2.0/System.Data.SqlClient.dll",
+        "lib/netstandard2.0/System.Data.SqlClient.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -12344,16 +12355,22 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/net451/System.Data.SqlClient.dll",
         "runtimes/win/lib/net46/System.Data.SqlClient.dll",
         "runtimes/win/lib/net461/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net461/System.Data.SqlClient.xml",
         "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
-        "system.data.sqlclient.4.6.1.nupkg.sha512",
+        "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
+        "system.data.sqlclient.4.8.6.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -16557,41 +16574,44 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/6.0.0": {
-      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+    "System.Text.Encoding.CodePages/8.0.0": {
+      "sha512": "OZIsVplFGaVY90G2SbpgU7EnCoOO5pw1t4ic21dBF3/1omrJFpAGoNAVpPyMVOC90/hvgkGG3VFqR13YgZMQfg==",
       "type": "package",
-      "path": "system.text.encoding.codepages/6.0.0",
+      "path": "system.text.encoding.codepages/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/net462/System.Text.Encoding.CodePages.dll",
+        "lib/net462/System.Text.Encoding.CodePages.xml",
         "lib/net6.0/System.Text.Encoding.CodePages.dll",
         "lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
-        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "lib/net7.0/System.Text.Encoding.CodePages.dll",
+        "lib/net7.0/System.Text.Encoding.CodePages.xml",
+        "lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "lib/net8.0/System.Text.Encoding.CodePages.xml",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.8.0.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -17984,23 +18004,24 @@
       "Microsoft.Data.Sqlite.Core >= 3.0.0",
       "Microsoft.SqlServer.SqlManagementObjects >= 150.18147.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Microsoft.Win32.Registry >= 4.5.0",
+      "Microsoft.Win32.Registry >= 4.7.0",
       "NHibernate >= 5.2.6",
       "NLog >= 4.6.7",
       "System.CodeDom >= 4.5.0",
-      "System.Data.SqlClient >= 4.6.1",
+      "System.Data.SqlClient >= 4.8.6",
       "System.DirectoryServices >= 4.5.0",
       "System.DirectoryServices.AccountManagement >= 4.5.0",
       "System.DirectoryServices.Protocols >= 4.5.0",
       "System.Linq.Dynamic >= 1.0.8",
       "System.Management.Automation >= 6.1.0",
       "System.Runtime.Serialization.Formatters >= 4.3.0",
+      "System.Text.Encoding.CodePages >= 8.0.0",
       "WindowsAzure.Storage >= 9.3.3",
       "Xamarin.Forms >= 4.5.0.617",
       "csla >= 5.5.4",
       "dotnetnuke.core >= 7.4.1.280",
       "fastJSON >= 2.4.0.4",
-      "kentico.xperience.libraries >= 13.0.173",
+      "kentico.xperience.libraries >= 13.0.178",
       "log4net >= 2.0.8",
       "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.0",
       "microsoft.aspnetcore.app.runtime.win-x86 >= 3.0.0",
@@ -18111,7 +18132,7 @@
           },
           "Microsoft.Win32.Registry": {
             "target": "Package",
-            "version": "[4.5.0, )"
+            "version": "[4.7.0, )"
           },
           "NHibernate": {
             "target": "Package",
@@ -18127,7 +18148,7 @@
           },
           "System.Data.SqlClient": {
             "target": "Package",
-            "version": "[4.6.1, )"
+            "version": "[4.8.6, )"
           },
           "System.DirectoryServices": {
             "target": "Package",
@@ -18153,6 +18174,10 @@
             "target": "Package",
             "version": "[4.3.0, )"
           },
+          "System.Text.Encoding.CodePages": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "WindowsAzure.Storage": {
             "target": "Package",
             "version": "[9.3.3, )"
@@ -18175,7 +18200,7 @@
           },
           "kentico.xperience.libraries": {
             "target": "Package",
-            "version": "[13.0.173, )"
+            "version": "[13.0.178, )"
           },
           "log4net": {
             "target": "Package",
@@ -18237,7 +18262,7 @@
     {
       "code": "NU1102",
       "level": "Error",
-      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
+      "message": "Nie można znaleźć pakietu youtubedlsharp w wersji (>= 1.2.2)\r\n  - Znalezione wersje w nuget.org: 19 [ Najbliższa wersja: 1.1.2 ]\r\n  - Znalezione wersje w Microsoft Visual Studio Offline Packages: 0",
       "libraryId": "youtubedlsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18246,7 +18271,7 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
+      "message": "Nie można znaleźć pakietu opcfoundation.netstandard.opc.ua4. W źródłach nie istnieją pakiety z tym identyfikatorem: Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18256,7 +18281,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Azure.Storage.Queues' 12.7.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
+      "message": "Pakiet „Azure.Storage.Queues” 12.7.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
       "libraryId": "Azure.Storage.Queues",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18266,7 +18291,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-3f7v-qx94-666m",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-3f7v-qx94-666m",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18276,7 +18301,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18286,7 +18311,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18296,7 +18321,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18306,7 +18331,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18316,7 +18341,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18326,7 +18351,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9w72-2f23-57gm",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9w72-2f23-57gm",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18336,7 +18361,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18346,7 +18371,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18356,7 +18381,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18366,7 +18391,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18376,7 +18401,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18386,7 +18411,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18396,7 +18421,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
+      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18406,7 +18431,7 @@
       "code": "NU1904",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'log4net' 2.0.8 has a known critical severity vulnerability, https://github.com/advisories/GHSA-2cwj-8chv-9pp9",
+      "message": "Pakiet „log4net” 2.0.8 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2cwj-8chv-9pp9",
       "libraryId": "log4net",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18416,7 +18441,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin' 2.2.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
+      "message": "Pakiet „Microsoft.AspNet.Identity.Owin” 2.2.2 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-25c8-p796-jg6r",
       "libraryId": "Microsoft.AspNet.Identity.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18426,7 +18451,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18436,7 +18461,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18446,7 +18471,7 @@
       "code": "NU1904",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-chfc-9w6m-75rf",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-chfc-9w6m-75rf",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18456,7 +18481,7 @@
       "code": "NU1904",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18466,7 +18491,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-hhc7-x9w4-cw47",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-hhc7-x9w4-cw47",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18476,7 +18501,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-25c8-p796-jg6r",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18486,7 +18511,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18496,7 +18521,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-485p-mrj5-8w2v",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-485p-mrj5-8w2v",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18506,7 +18531,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cw98-9j8w-wxv9",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-cw98-9j8w-wxv9",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18516,7 +18541,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-fcg8-mg9g-6hc4",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-fcg8-mg9g-6hc4",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18526,7 +18551,7 @@
       "code": "NU1904",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18536,7 +18561,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'NHibernate' 5.2.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
+      "message": "Pakiet „NHibernate” 5.2.6 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
       "libraryId": "NHibernate",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18546,27 +18571,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Data.SqlClient' 4.6.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Data.SqlClient' 4.6.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.DirectoryServices.Protocols' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9cxh-gqpx-qc5m",
+      "message": "Pakiet „System.DirectoryServices.Protocols” 4.5.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9cxh-gqpx-qc5m",
       "libraryId": "System.DirectoryServices.Protocols",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18576,7 +18581,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Management.Automation' 6.1.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5frh-8cmj-gc59",
+      "message": "Pakiet „System.Management.Automation” 6.1.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5frh-8cmj-gc59",
       "libraryId": "System.Management.Automation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18586,7 +18591,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Management.Automation' 6.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-62gw-3rmj-wmp2",
+      "message": "Pakiet „System.Management.Automation” 6.1.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-62gw-3rmj-wmp2",
       "libraryId": "System.Management.Automation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18596,7 +18601,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core 7.4.1.280' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „DotNetNuke.Core 7.4.1.280” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18606,7 +18611,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „EntityFramework 6.2.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18616,7 +18621,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18626,7 +18631,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.EntityFramework 2.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18636,7 +18641,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.Owin 2.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18646,7 +18651,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.WebApi.Core 5.2.7” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18656,7 +18661,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18666,7 +18671,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18676,7 +18681,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18686,7 +18691,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.Cookies 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security.Cookies 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security.Cookies",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18696,7 +18701,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.OAuth 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security.OAuth 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security.OAuth",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18706,7 +18711,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Owin 1.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18716,35 +18721,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Linq.Dynamic 1.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „System.Linq.Dynamic 1.0.8” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "System.Linq.Dynamic",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Data.SqlClient from 4.8.6 to 4.6.1. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Data.SqlClient (>= 4.8.6) \r\n dotNet-goof -> System.Data.SqlClient (>= 4.6.1)",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.Win32.Registry from 4.6.0 to 4.5.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Diagnostics.EventLog 4.6.0 -> Microsoft.Win32.Registry (>= 4.6.0) \r\n dotNet-goof -> Microsoft.Win32.Registry (>= 4.5.0)",
-      "libraryId": "Microsoft.Win32.Registry",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Text.Encoding.CodePages from 8.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> MailKit 4.7.1.1 -> MimeKit 4.7.1 -> System.Text.Encoding.CodePages (>= 8.0.0) \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Text.Encoding.CodePages (>= 6.0.0)",
-      "libraryId": "System.Text.Encoding.CodePages",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

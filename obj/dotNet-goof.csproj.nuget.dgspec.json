@@ -101,7 +101,7 @@
             },
             "Microsoft.Win32.Registry": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.7.0, )"
             },
             "NHibernate": {
               "target": "Package",
@@ -117,7 +117,7 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.6.1, )"
+              "version": "[4.8.6, )"
             },
             "System.DirectoryServices": {
               "target": "Package",
@@ -143,6 +143,10 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "WindowsAzure.Storage": {
               "target": "Package",
               "version": "[9.3.3, )"
@@ -165,7 +169,7 @@
             },
             "kentico.xperience.libraries": {
               "target": "Package",
-              "version": "[13.0.173, )"
+              "version": "[13.0.178, )"
             },
             "log4net": {
               "target": "Package",
