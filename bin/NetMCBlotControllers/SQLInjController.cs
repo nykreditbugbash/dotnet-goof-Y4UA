@@ -17,23 +17,34 @@ namespace NETMVCBlot.Controllers
         {
             using (ObjectContext studentContext = new ObjectContext("name=StudentEntities"))
             {
-                // CTSECISSUE: SQLInjection
-                studentContext.CreateQuery<Student>("select * from students " + input);
+                // FIXED: Use parameterized query to prevent SQL Injection
+                var query = studentContext.CreateQuery<Student>(
+                    "select * from students where Name = @name",
+                    new ObjectParameter("name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreCommand("select * from students " + input);
+                // FIXED: Use parameterized command
+                studentContext.ExecuteStoreCommand(
+                    "select * from students where Name = @name",
+                    new System.Data.SqlClient.SqlParameter("@name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input);
+                // FIXED: Use parameterized query
+                studentContext.ExecuteStoreQuery<Student>(
+                    "select * from students where Name = @name",
+                    new System.Data.SqlClient.SqlParameter("@name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input, "", MergeOption.AppendOnly);
+                // FIXED: Use parameterized query with MergeOption
+                studentContext.ExecuteStoreQuery<Student>(
+                    "select * from students where Name = @name",
+                    new System.Data.SqlClient.SqlParameter("@name", input),
+                    MergeOption.AppendOnly);
             }
 
+            // For FullTextSqlQuery, validate or sanitize input before use
+            string safeInput = input.Replace("'", "''"); // Basic escaping, consider stricter validation
             FullTextSqlQuery myQuery = new FullTextSqlQuery(SPContext.Current.Site)
             {
-                // CTSECISSUE: SQLInjection
-                QueryText = "SELECT Path FROM SCOPE() WHERE  \"SCOPE\" = '" + input + "'",
+                // FIXED: Use sanitized input
+                QueryText = "SELECT Path FROM SCOPE() WHERE  \"SCOPE\" = '" + safeInput + "'",
                 ResultTypes = ResultType.RelevantResults
 
             };
