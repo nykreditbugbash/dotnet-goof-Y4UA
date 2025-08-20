@@ -14,30 +14,30 @@ namespace NETMVCBlot.Controllers
         public ActionResult Index(string input)
         {
             string s = String.Empty;
-            using (WebClient wc = new WebClient())
+            // Validate and whitelist the input to prevent SSRF and HPP
+            Uri validatedUri;
+            if (!Uri.TryCreate(input, UriKind.Absolute, out validatedUri) ||
+                (validatedUri.Scheme != Uri.UriSchemeHttp && validatedUri.Scheme != Uri.UriSchemeHttps) ||
+                !validatedUri.Host.EndsWith("example.com")) // Replace with your allowed domain
             {
-                // CTSECISSUE: Server Side Request Forgery (SSRF)
-                s = wc.DownloadString(input);
-                ViewBag.StringDownloaded = s;
+                ViewBag.StringDownloaded = "Invalid or untrusted URL.";
             }
+            else
+            {
+                using (WebClient wc = new WebClient())
+                {
+                    s = wc.DownloadString(validatedUri);
+                    ViewBag.StringDownloaded = s;
+                }
 
-            WebClient wc2 = new WebClient();
-            // CTSECISSUE: Server Side Request Forgery (SSRF)
-            // CTSECISSUE: HTTP Parameter Pollution (HPP)
-            wc2.BaseAddress = input;
+                var wc2 = new WebClient { BaseAddress = validatedUri.ToString() };
 
-            WebClient wc3 = new WebClient();
-            // CTSECISSUE: HTTP Parameter Pollution (HPP)
-            wc3.BaseAddress = "https://www.target.com/i/" + input;
+                var wc3 = new WebClient { BaseAddress = "https://www.target.com/i/" + HttpUtility.UrlEncode(input) };
 
-            HttpClient hc = new HttpClient();
-            // CTSECISSUE: Server Side Request Forgery (SSRF)
-            // CTSECISSUE: HTTP Parameter Pollution (HPP)
-            hc.BaseAddress = new Uri(input);
+                var hc = new HttpClient { BaseAddress = validatedUri };
 
-            HttpClient hc2 = new HttpClient();
-            // CTSECISSUE: HTTP Parameter Pollution (HPP)
-            hc2.BaseAddress = new Uri("https://www.target.com/i/" + input);
+                var hc2 = new HttpClient { BaseAddress = new Uri("https://www.target.com/i/" + HttpUtility.UrlEncode(input)) };
+            }
 
 
             return View();

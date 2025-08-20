@@ -10,18 +10,22 @@ namespace NETStandaloneBlot.Cryptography
     {
         public void Run()
         {
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-CBC
-            RijndaelManaged rm = new RijndaelManaged();
-
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-CB
-            RijndaelManaged rm2 = new RijndaelManaged();
-            rm2.Mode = CipherMode.CBC;
-
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-CBC
-            RijndaelManaged rm3 = new RijndaelManaged
+            // Use AesCryptoServiceProvider with a secure mode (CBC is not recommended, GCM is preferred if available)
+            using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider())
             {
+                aes.Mode = CipherMode.CFB; // Use CFB as a more secure alternative to CBC (GCM is not available in this provider)
+                // Configure other properties as needed
+            }
 
-            };
+            using (AesCryptoServiceProvider aes2 = new AesCryptoServiceProvider { Mode = CipherMode.CFB })
+            {
+                // Simplified object initialization
+            }
+
+            using (AesCryptoServiceProvider aes3 = new AesCryptoServiceProvider())
+            {
+                aes3.Mode = CipherMode.CFB;
+            }
         }
     }
 }

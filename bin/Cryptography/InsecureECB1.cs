@@ -10,44 +10,45 @@ namespace NETStandaloneBlot.Cryptography
     {
         public void Run()
         {
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
+            // Use secure CBC mode instead of insecure ECB mode
             AesCryptoServiceProvider aesCryptoServiceProvider = new AesCryptoServiceProvider
             {
-                Mode = CipherMode.ECB
+                Mode = CipherMode.CBC
             };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
-            AesCryptoServiceProvider aesCryptoServiceProvider2 = new AesCryptoServiceProvider();
-            aesCryptoServiceProvider2.Mode = CipherMode.ECB;
+            AesCryptoServiceProvider aesCryptoServiceProvider2 = new AesCryptoServiceProvider
+            {
+                Mode = CipherMode.CBC
+            };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
             AesManaged aesManaged = new AesManaged
             {
-                Mode = CipherMode.ECB
+                Mode = CipherMode.CBC
             };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
-            AesManaged aesManaged2 = new AesManaged();
-            aesManaged2.Mode = CipherMode.ECB;
+            AesManaged aesManaged2 = new AesManaged
+            {
+                Mode = CipherMode.CBC
+            };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
             RijndaelManaged rm = new RijndaelManaged
             {
-                Mode = CipherMode.ECB
+                Mode = CipherMode.CBC
             };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
-            RijndaelManaged rm2 = new RijndaelManaged();
-            rm2.Mode = CipherMode.ECB;
+            RijndaelManaged rm2 = new RijndaelManaged
+            {
+                Mode = CipherMode.CBC
+            };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
-            TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
-            tdes.Mode = CipherMode.ECB;
+            TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider
+            {
+                Mode = CipherMode.CBC
+            };
 
-            // CTSECISSUE:InsecureSymmetricEncryptionMode-ECB
             TripleDESCryptoServiceProvider tdes2 = new TripleDESCryptoServiceProvider
             {
-                Mode = CipherMode.ECB
+                Mode = CipherMode.CBC
             };
 
 
