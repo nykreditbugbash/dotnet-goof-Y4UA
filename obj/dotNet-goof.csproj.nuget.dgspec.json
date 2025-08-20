@@ -60,7 +60,7 @@
             },
             "Microsoft.AspNet.Identity.Core": {
               "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.2.4, )"
             },
             "Microsoft.AspNet.Identity.EntityFramework": {
               "target": "Package",
@@ -68,7 +68,7 @@
             },
             "Microsoft.AspNet.Identity.Owin": {
               "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.2.4, )"
             },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
@@ -90,6 +90,10 @@
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Microsoft.Owin.Security.Cookies": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Microsoft.SqlServer.SqlManagementObjects": {
               "target": "Package",
