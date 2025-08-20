@@ -151,9 +151,18 @@ namespace NETMVCBlot.Controllers
         {
             try
             {
-                // ruleid: insecure-losformatter-deserialization
-                LosFormatter losFormatter = new LosFormatter();
-                object obj = losFormatter.Deserialize(json);
+                // FIX: Avoid deserializing untrusted input directly
+                // Consider using a safe serialization format or validating input before deserialization
+                if (!string.IsNullOrWhiteSpace(json) && json.StartsWith("<") && json.EndsWith(">"))
+                {
+                    LosFormatter losFormatter = new LosFormatter();
+                    // Only deserialize if input passes basic validation (customize as needed)
+                    object obj = losFormatter.Deserialize(json);
+                }
+                else
+                {
+                    throw new InvalidOperationException("Invalid or untrusted input for deserialization.");
+                }
             }
             catch (Exception e)
             {

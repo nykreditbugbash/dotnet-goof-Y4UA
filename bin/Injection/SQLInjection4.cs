@@ -12,12 +12,18 @@ namespace NETStandaloneBlot.Injection
     {
         public void Run()
         {
-            ServerConnection sc = new ServerConnection();
-            sc.ConnectionString = "";
+            ServerConnection sc = new ServerConnection
+            {
+                ConnectionString = ""
+            };
             Server server = new Server(sc);
-            string commandText = "SELECT * FROM users WHERE ( name = '" + System.Console.ReadLine() + "')";
-            // CTSECISSUE: SQLInjection
-            server.ConnectionContext.ExecuteNonQuery(commandText);
+            Console.Write("Enter user name: ");
+            string userInput = System.Console.ReadLine();
+            string commandText = "SELECT * FROM users WHERE ( name = @name )";
+            var cmd = server.ConnectionContext.SqlConnectionObject.CreateCommand();
+            cmd.CommandText = commandText;
+            cmd.Parameters.AddWithValue("@name", userInput);
+            cmd.ExecuteNonQuery();
             server.ConnectionContext.CommitTransaction();
             server.ConnectionContext.Disconnect();
         }

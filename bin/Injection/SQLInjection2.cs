@@ -11,15 +11,15 @@ namespace NETStandaloneBlot.Injection
     {
         public void Run()
         {
-            string commandText = "SELECT * FROM users WHERE ( name = '" + System.Console.ReadLine() + "')";
+            string userInput = System.Console.ReadLine();
+            string commandText = "SELECT * FROM users WHERE ( name = @name)";
 
-            using (SqlConnection connection =
-                    new SqlConnection(""))
-            {
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                // CTSECISSUE: SQLInjection
-                adapter.SelectCommand = new SqlCommand(commandText, connection);
-            }
+            using var connection = new SqlConnection("");
+            using var command = new SqlCommand(commandText, connection);
+            command.Parameters.AddWithValue("@name", userInput);
+
+            using var adapter = new SqlDataAdapter(command);
+            // CTSECISSUE: SQLInjection fixed by using parameterized query
         }
     }
 }

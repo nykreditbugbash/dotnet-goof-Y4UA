@@ -14,10 +14,10 @@ namespace NETStandaloneBlot.Injection
         {
             using (var context = new SchoolContext())
             {
-                // CTSECISSUE: SQLInjection
+                // FIXED: Use parameterized query to prevent SQL Injection
                 string name = System.Console.ReadLine();
                 var studentList = context.Students
-                                    .SqlQuery("SELECT * FROM users WHERE ( name = '" + name + "')")
+                                    .SqlQuery("SELECT * FROM users WHERE ( name = @p0)", name)
                                     .ToListAsync();
             }
 
@@ -27,25 +27,35 @@ namespace NETStandaloneBlot.Injection
 
                 string name = System.Console.ReadLine();
 
-                // CTSECISSUE: SQLInjection
-                ObjectQuery<Student> studentQuery = new ObjectQuery<Student>(name, studentContext, MergeOption.NoTracking);
+                // FIXED: Use parameterized query instead of passing user input directly
+                string studentName = System.Console.ReadLine();
+                ObjectQuery<Student> studentQuery = studentContext.CreateQuery<Student>(
+                    "SELECT VALUE s FROM students AS s WHERE s.Name = @name", 
+                    new ObjectParameter("name", studentName)
+                );
 
                 ObjectQuery<Student> studentQuery2 = new ObjectQuery<Student>("students", studentContext, MergeOption.NoTracking);
 
+                // FIXED: Validate or whitelist the path before using it in Include
                 string path = System.Console.ReadLine();
-                // CTSECISSUE: SQLInjection
-                IEnumerable<Student> students = studentQuery2.Include<Student>(path);
+                // Example whitelist check (adjust as needed)
+                var allowedPaths = new List<string> { "Courses", "Grades" };
+                IEnumerable<Student> students = allowedPaths.Contains(path)
+                    ? studentQuery2.Include<Student>(path)
+                    : studentQuery2;
 
-                string where = System.Console.ReadLine();
-                // CTSECISSUE: SQLInjection
-                ObjectQuery<Student> studentQuery4 = studentQuery2.Where(where);
+                // FIXED: Use parameterized query for where clause
+                string whereValue = System.Console.ReadLine();
+                ObjectQuery<Student> studentQuery4 = studentQuery2.Where("it.Name = @name", new ObjectParameter("name", whereValue));
 
+                // FIXED: Avoid using raw user input as SQL
                 string sql = System.Console.ReadLine();
-                // CTSECISSUE: SQLInjection
-                studentContext.CreateQuery<Student>(sql);
-
-                // CTSECISSUE: SQLInjection
-                studentContext.CreateQuery<Student>(sql, null);
+                // Instead, use parameterized query or validate/whitelist the input
+                if (sql == "SELECT VALUE s FROM students AS s")
+                {
+                    studentContext.CreateQuery<Student>(sql);
+                    studentContext.CreateQuery<Student>(sql, null);
+                }
             }
 
             string db = System.Console.ReadLine();
@@ -53,24 +63,19 @@ namespace NETStandaloneBlot.Injection
             // CTSECISSUE: SQLInjection
             using (ObjectContext studentContext = new ObjectContext("name=" + db))
             {
-                // CTSECISSUE: SQLInjection
+                // FIXED: Use parameterized queries to prevent SQL Injection
                 string name = System.Console.ReadLine();
-                studentContext.ExecuteStoreCommand("SELECT * FROM users WHERE ( name = '" + name + "')");
+                studentContext.ExecuteStoreCommand("SELECT * FROM users WHERE ( name = @p0)", name);
                 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreCommand(TransactionalBehavior.EnsureTransaction, "SELECT * FROM users WHERE ( name = '" + name + "')", null);
+                studentContext.ExecuteStoreCommand(TransactionalBehavior.EnsureTransaction, "SELECT * FROM users WHERE ( name = @p0)", name);
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreCommand(TransactionalBehavior.EnsureTransaction, "SELECT * FROM users WHERE ( name = '" + name + "')", null);
+                studentContext.ExecuteStoreCommand(TransactionalBehavior.EnsureTransaction, "SELECT * FROM users WHERE ( name = @p0)", name);
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = '" + name + "')");
+                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = @p0)", name);
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = '" + name + "')", MergeOption.AppendOnly);
+                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = @p0)", MergeOption.AppendOnly, name);
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = '" + name + "')", new ExecutionOptions(MergeOption.AppendOnly, false), null);
+                studentContext.ExecuteStoreQuery<Student>("SELECT * FROM users WHERE ( name = @p0)", new ExecutionOptions(MergeOption.AppendOnly, false), name);
             }
         }
     }

@@ -10,8 +10,8 @@ namespace NETStandaloneBlot.Cryptography
     {
         public void Run()
         {
-            // CTSECISSUE:InsufficientEncryptionKeySize
-            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(1024);
+            // Fixed: Use a secure key size (2048 bits or higher)
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(2048);
             rsa.Encrypt(new byte[] { }, false);
         }
     }

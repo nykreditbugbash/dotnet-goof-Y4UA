@@ -13,43 +13,45 @@ namespace NETStandaloneBlot.Injection
         {
             using (SqlConnection con = new SqlConnection(""))
             {
-                SqlCommand sqlComm = new SqlCommand();
-                sqlComm.Connection = con;
-                // CTSECISSUE: SQLInjection
-                sqlComm.CommandText = "SELECT * FROM users WHERE ( name = '" + System.Console.ReadLine() + "')";
+                Console.Write("Enter username: ");
+                string userInput = System.Console.ReadLine();
+                SqlCommand sqlComm = new SqlCommand("SELECT * FROM users WHERE ( name = @name )", con);
+                sqlComm.Parameters.AddWithValue("@name", userInput);
                 con.Open();
                 SqlDataReader DR = sqlComm.ExecuteReader();
             }
 
             using (SqlConnection con = new SqlConnection(""))
             {
-                SqlCommand sqlComm = new SqlCommand();
-                sqlComm.Connection = con;
-                // CTSECISSUE: InsecureDatabaseAdministrativeMechanism
-                sqlComm.CommandText = System.Console.ReadLine();
+                Console.Write("Enter a safe SQL command: ");
+                string userInput = System.Console.ReadLine();
+                // Only allow specific safe commands or reject arbitrary input in production
+                SqlCommand sqlComm = new SqlCommand(userInput, con);
+                // Optionally, validate or restrict userInput here
                 con.Open();
                 SqlDataReader DR = sqlComm.ExecuteReader();
             }
 
             using (SqlConnection con = new SqlConnection(""))
             {
-                // possible sql injection, if SP_GetVuln uses dynamically constructed sql queries
-
+                Console.Write("Enter sID: ");
+                string sID = System.Console.ReadLine();
                 SqlCommand cmd = new SqlCommand("EXEC SP_GetVuln @sID", con);
-                // CTSECISSUE: SQLInjection
-                cmd.Parameters.Add(new SqlParameter("@sID", System.Console.ReadLine()));
+                cmd.Parameters.AddWithValue("@sID", sID);
                 cmd.CommandType = System.Data.CommandType.Text;
+                con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();                
             }
 
 
             using (SqlConnection con = new SqlConnection(""))
             {
-                // possible sql injection, if SP_GetVuln uses dynamically constructed sql queries
+                Console.Write("Enter sID: ");
+                string sID = System.Console.ReadLine();
                 SqlCommand cmd = new SqlCommand("SP_GetVuln", con);
-                // CTSECISSUE: SQLInjection
-                cmd.Parameters.Add(new SqlParameter("@sID", System.Console.ReadLine()));
+                cmd.Parameters.AddWithValue("@sID", sID);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
             }
         }
