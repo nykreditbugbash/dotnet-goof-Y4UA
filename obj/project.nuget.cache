@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3ZS2ZkCQSHs=",
+  "dgSpecHash": "66XF4A1dRj0=",
   "success": false,
   "projectFilePath": "C:\\Users\\Marcin Kraska\\Documents\\Repos\\dotnet-goof-Y4UA\\dotNet-goof.csproj",
   "expectedPackageFiles": [
@@ -15,15 +15,17 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\csla\\5.5.4\\csla.5.5.4.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\documentformat.openxml\\2.19.0\\documentformat.openxml.2.19.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\dotnetnuke.core\\7.4.1.280\\dotnetnuke.core.7.4.1.280.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\dotnetnuke.core\\10.0.1\\dotnetnuke.core.10.0.1.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\dotnetnuke.dependencyinjection\\10.0.1\\dotnetnuke.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\dotnetnuke.instrumentation\\10.0.1\\dotnetnuke.instrumentation.10.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\fastjson\\2.4.0.4\\fastjson.2.4.0.4.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\fsharp.core\\4.3.2\\fsharp.core.4.3.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\fspickler\\5.3.2\\fspickler.5.3.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\fspickler.json\\5.3.2\\fspickler.json.5.3.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\kentico.xperience.libraries\\13.0.178\\kentico.xperience.libraries.13.0.178.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\kentico.xperience.libraries\\13.0.180\\kentico.xperience.libraries.13.0.180.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\mailkit\\4.7.1.1\\mailkit.4.7.1.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\maxmind.db\\2.6.1\\maxmind.db.2.6.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\maxmind.geoip2\\3.2.0\\maxmind.geoip2.3.2.0.nupkg.sha512",
@@ -32,8 +34,8 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.identity.owin\\2.2.4\\microsoft.aspnet.identity.owin.2.2.4.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.10\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.0.0\\microsoft.aspnetcore.app.runtime.win-x86.3.0.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.15\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.15.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.27\\microsoft.aspnetcore.app.runtime.win-x86.6.0.27.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.1.2\\microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\2.1.1\\microsoft.aspnetcore.razor.language.2.1.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.0\\microsoft.azure.cognitiveservices.vision.computervision.7.0.0.nupkg.sha512",
@@ -64,8 +66,8 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.8\\microsoft.extensions.fileproviders.physical.3.1.8.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.8\\microsoft.extensions.filesystemglobbing.3.1.8.nupkg.sha512",
@@ -83,7 +85,7 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.management.infrastructure\\1.0.0\\microsoft.management.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.netcore.analyzers\\2.9.3\\microsoft.netcore.analyzers.2.9.3.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.netframework.analyzers\\2.9.3\\microsoft.netframework.analyzers.2.9.3.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.owin\\4.2.2\\microsoft.owin.4.2.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.owin.security\\4.2.2\\microsoft.owin.security.4.2.2.nupkg.sha512",
@@ -104,7 +106,6 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\2.1.10\\microsoft.visualstudio.web.codegeneration.templating.2.1.10.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\2.1.10\\microsoft.visualstudio.web.codegeneration.utils.2.1.10.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\2.1.10\\microsoft.visualstudio.web.codegenerators.mvc.2.1.10.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\4.5.0\\microsoft.win32.registry.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\mimekit\\4.7.1\\mimekit.4.7.1.nupkg.sha512",
@@ -152,7 +153,6 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.collections.nongeneric\\4.0.1\\system.collections.nongeneric.4.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.componentmodel.composition\\4.5.0\\system.componentmodel.composition.4.5.0.nupkg.sha512",
@@ -163,7 +163,7 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.composition.hosting\\1.0.31\\system.composition.hosting.1.0.31.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.composition.runtime\\1.0.31\\system.composition.runtime.1.0.31.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.composition.typedparts\\1.0.31\\system.composition.typedparts.1.0.31.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.1\\system.configuration.configurationmanager.8.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.data.hashfunction.core\\2.0.0\\system.data.hashfunction.core.2.0.0.nupkg.sha512",
@@ -175,7 +175,6 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.eventlog\\4.6.0\\system.diagnostics.eventlog.4.6.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.fileversioninfo\\4.3.0\\system.diagnostics.fileversioninfo.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.process\\4.1.0\\system.diagnostics.process.4.1.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.stacktrace\\4.3.0\\system.diagnostics.stacktrace.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.diagnostics.tracesource\\4.0.0\\system.diagnostics.tracesource.4.0.0.nupkg.sha512",
@@ -195,7 +194,6 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.7.0\\system.io.filesystem.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.io.filesystem.watcher\\4.0.0\\system.io.filesystem.watcher.4.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.linq.dynamic\\1.0.8\\system.linq.dynamic.1.0.8.nupkg.sha512",
@@ -207,11 +205,7 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.nameresolution\\4.0.0\\system.net.nameresolution.4.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.requests\\4.0.11\\system.net.requests.4.0.11.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.sockets\\4.1.0\\system.net.sockets.4.1.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.net.webheadercollection\\4.0.1\\system.net.webheadercollection.4.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
@@ -226,8 +220,8 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime.caching\\8.0.1\\system.runtime.caching.8.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime.compilerservices.visualc\\4.3.0\\system.runtime.compilerservices.visualc.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
@@ -265,17 +259,15 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.text.regularexpressions\\4.3.1\\system.text.regularexpressions.4.3.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.accesscontrol\\4.5.0\\system.threading.accesscontrol.4.5.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.overlapped\\4.0.1\\system.threading.overlapped.4.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.tasks.dataflow\\4.6.0\\system.threading.tasks.dataflow.4.6.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
@@ -291,7 +283,7 @@
     {
       "code": "NU1102",
       "level": "Error",
-      "message": "Nie można znaleźć pakietu youtubedlsharp w wersji (>= 1.2.2)\r\n  - Znalezione wersje w nuget.org: 19 [ Najbliższa wersja: 1.1.2 ]\r\n  - Znalezione wersje w Microsoft Visual Studio Offline Packages: 0",
+      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
       "libraryId": "youtubedlsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -300,7 +292,7 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Nie można znaleźć pakietu opcfoundation.netstandard.opc.ua4. W źródłach nie istnieją pakiety z tym identyfikatorem: Microsoft Visual Studio Offline Packages, nuget.org",
+      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -310,177 +302,17 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Azure.Storage.Queues” 12.7.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
+      "message": "Package 'Azure.Storage.Queues' 12.7.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
       "libraryId": "Azure.Storage.Queues",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
     },
     {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-3f7v-qx94-666m",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9w72-2f23-57gm",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core” 7.4.1.280 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „log4net” 2.0.8 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2cwj-8chv-9pp9",
-      "libraryId": "log4net",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.10 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-25c8-p796-jg6r",
+      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 6.0.27 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -490,57 +322,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-485p-mrj5-8w2v",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-cw98-9j8w-wxv9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-fcg8-mg9g-6hc4",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 3.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „NHibernate” 5.2.6 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
+      "message": "Package 'NHibernate' 5.2.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
       "libraryId": "NHibernate",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -550,7 +332,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „System.DirectoryServices.Protocols” 4.5.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-9cxh-gqpx-qc5m",
+      "message": "Package 'System.DirectoryServices.Protocols' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9cxh-gqpx-qc5m",
       "libraryId": "System.DirectoryServices.Protocols",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -560,7 +342,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „System.Management.Automation” 6.1.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-5frh-8cmj-gc59",
+      "message": "Package 'System.Management.Automation' 6.1.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5frh-8cmj-gc59",
       "libraryId": "System.Management.Automation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -570,7 +352,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „System.Management.Automation” 6.1.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-62gw-3rmj-wmp2",
+      "message": "Package 'System.Management.Automation' 6.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-62gw-3rmj-wmp2",
       "libraryId": "System.Management.Automation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -580,7 +362,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „DotNetNuke.Core 7.4.1.280” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'DotNetNuke.Core 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -590,7 +372,17 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „EntityFramework 6.2.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'DotNetNuke.Instrumentation 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetNuke.Instrumentation",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -600,7 +392,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -610,7 +402,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.EntityFramework 2.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -620,7 +412,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.Owin 2.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -630,7 +422,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.WebApi.Core 5.2.7” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -640,7 +432,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -650,7 +442,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.Owin 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -660,7 +452,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin.Security 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.Owin.Security 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Owin.Security",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -670,7 +462,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin.Security.Cookies 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.Owin.Security.Cookies 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Owin.Security.Cookies",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -680,7 +472,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.Owin.Security.OAuth 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.Owin.Security.OAuth 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Owin.Security.OAuth",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -690,7 +482,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Owin 1.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -700,7 +492,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „System.Linq.Dynamic 1.0.8” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'System.Linq.Dynamic 1.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "System.Linq.Dynamic",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
