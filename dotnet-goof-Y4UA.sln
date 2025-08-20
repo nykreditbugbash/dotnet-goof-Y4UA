@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNet-goof", "dotNet-goof.csproj", "{2F0B4A26-D5F5-67F1-0585-61A77BD6A246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-goof-second", "second\dotnet-goof-second.csproj", "{1C728D55-5AA5-854A-26FF-4DE98F14A9F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F0B4A26-D5F5-67F1-0585-61A77BD6A246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0B4A26-D5F5-67F1-0585-61A77BD6A246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0B4A26-D5F5-67F1-0585-61A77BD6A246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0B4A26-D5F5-67F1-0585-61A77BD6A246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C728D55-5AA5-854A-26FF-4DE98F14A9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C728D55-5AA5-854A-26FF-4DE98F14A9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C728D55-5AA5-854A-26FF-4DE98F14A9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C728D55-5AA5-854A-26FF-4DE98F14A9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E41342F-F734-484D-8453-F5E04A1FC932}
+	EndGlobalSection
+EndGlobal
