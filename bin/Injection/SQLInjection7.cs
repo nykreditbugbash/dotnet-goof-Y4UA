@@ -15,8 +15,10 @@ namespace NETStandaloneBlot.Injection
             cfg.Configure();
             var sessionFactory = cfg.BuildSessionFactory();
             ISession session = sessionFactory.OpenSession();
-            // CTSECISSUE:NHibernateSQLInjection
-            var query = session.CreateQuery("from users where name ='" + System.Console.ReadLine() + "'");
+            // Fixed: Use parameterized query to prevent SQL Injection
+            string userInput = System.Console.ReadLine();
+            var query = session.CreateQuery("from users where name = :name")
+                               .SetParameter("name", userInput);
         }
     }
 }

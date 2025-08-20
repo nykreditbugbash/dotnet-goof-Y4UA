@@ -14,14 +14,18 @@ namespace NETStandaloneBlot.Injection
         {
             using (var context = new StudentContext())
             {
-                // CTSECISSUE: SQLInjection
-                var gradeList = context.Database.ExecuteSqlCommand("SELECT * FROM users WHERE ( name = '" + System.Console.ReadLine() + "')");
+                // FIXED: Use parameterized query to prevent SQL Injection
+                var name = System.Console.ReadLine();
+                var gradeList = context.Database.ExecuteSqlCommand(
+                    "SELECT * FROM users WHERE ( name = @p0 )", name);
             }
 
             using (var context = new StudentContext())
             {
-                // CTSECISSUE: SQLInjection
-                var gradeList = context.Database.ExecuteSqlCommandAsync("SELECT * FROM users WHERE ( name = '" + System.Console.ReadLine() + "')").Result;
+                // FIXED: Use parameterized query to prevent SQL Injection
+                var name = System.Console.ReadLine();
+                var gradeList = context.Database.ExecuteSqlCommandAsync(
+                    "SELECT * FROM users WHERE ( name = @p0 )", name).Result;
             }
         }
     }

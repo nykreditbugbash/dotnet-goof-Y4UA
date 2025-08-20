@@ -17,8 +17,9 @@ namespace NETStandaloneBlot.Injection
             try
             {
                 cn.Open();
-                // CTSECISSUE:SqlInjection
-                var cmd = new SqliteCommand("select count(*) from Users where ID = " + System.Console.ReadLine(), cn);
+                // Fixed: Use parameterized query to prevent SQL injection
+                var cmd = new SqliteCommand("select count(*) from Users where ID = @id", cn);
+                cmd.Parameters.AddWithValue("@id", System.Console.ReadLine());
                 string result = cmd.ExecuteScalar().ToString();
             }
             finally

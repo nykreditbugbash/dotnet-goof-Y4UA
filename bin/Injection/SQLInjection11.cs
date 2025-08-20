@@ -14,18 +14,21 @@ namespace NETStandaloneBlot.Injection
         {
             using (var context = new SchoolContext())
             {
-                // CTSECISSUE: SQLInjection
+                // Secure: Use strongly-typed LINQ expressions to avoid SQL injection
                 string name = System.Console.ReadLine();
-                var studentList = context.Students.Where(name);
+                var studentList = context.Students.Where(s => s.Name == name);
 
-                // CTSECISSUE: SQLInjection
-                var studentList2 = context.Students.Where<Student>(name);
+                // Secure: Use strongly-typed LINQ expressions
+                var studentList2 = context.Students.Where(s => s.Name == name);
 
-                // CTSECISSUE: SQLInjection
-                var studentList3 = context.Students.Select(name);
+                // Secure: Use strongly-typed LINQ expressions for selection
+                var studentList3 = context.Students.Select(s => s.Name);
 
-                // CTSECISSUE: SQLInjection
-                var studentList4 = context.Students.OrderBy<Student>("asc " + name, null);
+                // Secure: Use strongly-typed OrderBy with a switch or if-else
+                bool ascending = true; // or determine based on user input safely
+                var studentList4 = ascending
+                    ? context.Students.OrderBy(s => s.Name)
+                    : context.Students.OrderByDescending(s => s.Name);
             }
         }
     }
