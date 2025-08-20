@@ -48,7 +48,7 @@
           "dependencies": {
             "Azure.Storage.Queues": {
               "target": "Package",
-              "version": "[12.7.0, )"
+              "version": "[12.11.0, )"
             },
             "EntityFramework": {
               "target": "Package",
@@ -109,7 +109,7 @@
             },
             "NHibernate": {
               "target": "Package",
-              "version": "[5.2.6, )"
+              "version": "[5.4.9, )"
             },
             "NLog": {
               "target": "Package",
@@ -133,7 +133,7 @@
             },
             "System.DirectoryServices.Protocols": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[5.0.1, )"
             },
             "System.Linq.Dynamic": {
               "target": "Package",
@@ -141,7 +141,7 @@
             },
             "System.Management.Automation": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.1.6, )"
             },
             "System.Runtime.Serialization.Formatters": {
               "target": "Package",
@@ -177,7 +177,7 @@
             },
             "kentico.xperience.libraries": {
               "target": "Package",
-              "version": "[13.0.180, )"
+              "version": "[13.0.181, )"
             },
             "log4net": {
               "target": "Package",

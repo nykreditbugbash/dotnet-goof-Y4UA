@@ -104,10 +104,11 @@
           }
         }
       },
-      "Azure.Storage.Common/12.8.0": {
+      "Azure.Storage.Common/12.12.0": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.15.0"
+          "Azure.Core": "1.25.0",
+          "System.IO.Hashing": "6.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Azure.Storage.Common.dll": {
@@ -120,20 +121,20 @@
           }
         }
       },
-      "Azure.Storage.Queues/12.7.0": {
+      "Azure.Storage.Queues/12.11.0": {
         "type": "package",
         "dependencies": {
-          "Azure.Storage.Common": "12.8.0",
+          "Azure.Storage.Common": "12.12.0",
           "System.Memory.Data": "1.0.2",
-          "System.Text.Json": "4.6.0"
+          "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/Azure.Storage.Queues.dll": {
+          "lib/netstandard2.1/Azure.Storage.Queues.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Storage.Queues.dll": {
+          "lib/netstandard2.1/Azure.Storage.Queues.dll": {
             "related": ".xml"
           }
         }
@@ -458,7 +459,7 @@
           }
         }
       },
-      "Kentico.Xperience.Libraries/13.0.180": {
+      "Kentico.Xperience.Libraries/13.0.181": {
         "type": "package",
         "dependencies": {
           "AWSSDK.Core": "3.5.1.13",
@@ -1975,7 +1976,7 @@
           "build/Microsoft.NetCore.Analyzers.props": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0": {
+      "Microsoft.NETCore.Platforms/5.0.4": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2069,46 +2070,46 @@
           }
         }
       },
-      "Microsoft.PowerShell.CoreCLR.Eventing/6.1.0": {
+      "Microsoft.PowerShell.CoreCLR.Eventing/6.1.6": {
         "type": "package",
         "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
+          "System.Security.Principal.Windows": "4.5.1"
         },
         "compile": {
-          "ref/netstandard2.0/System.Management.Automation.dll": {}
+          "ref/netcoreapp2.1/System.Management.Automation.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/linux-arm/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/linux-arm/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "linux-arm"
           },
-          "runtimes/linux-x64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/linux-x64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "linux-x64"
           },
-          "runtimes/osx/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/osx/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "osx"
           },
-          "runtimes/win-arm/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/win-arm/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "win-arm"
           },
-          "runtimes/win-arm64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/win-arm64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "win-arm64"
           },
-          "runtimes/win-x64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/win-x64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "win-x64"
           },
-          "runtimes/win-x86/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
+          "runtimes/win-x86/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll": {
             "assetType": "runtime",
             "rid": "win-x86"
           }
         }
       },
-      "Microsoft.PowerShell.Native/6.1.0-rc.1": {
+      "Microsoft.PowerShell.Native/6.1.0": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/linux-arm/native/libpsl-native.so": {
@@ -2757,14 +2758,14 @@
           }
         }
       },
-      "NHibernate/5.2.6": {
+      "NHibernate/5.4.9": {
         "type": "package",
         "dependencies": {
           "Antlr3.Runtime": "[3.5.1, 4.0.0)",
           "Iesi.Collections": "[4.0.4, 5.0.0)",
           "Remotion.Linq": "[2.2.0, 3.0.0)",
           "Remotion.Linq.EagerFetching": "[2.2.0, 3.0.0)",
-          "System.Configuration.ConfigurationManager": "4.4.1"
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "lib/netcoreapp2.0/NHibernate.dll": {
@@ -3768,11 +3769,11 @@
           }
         }
       },
-      "System.DirectoryServices.Protocols/4.5.0": {
+      "System.DirectoryServices.Protocols/5.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Security.Principal.Windows": "4.5.0"
+          "Microsoft.NETCore.Platforms": "5.0.4",
+          "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
           "ref/netstandard2.0/System.DirectoryServices.Protocols.dll": {
@@ -3780,9 +3781,19 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.DirectoryServices.Protocols.dll": {}
+          "lib/netstandard2.0/System.DirectoryServices.Protocols.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
+          "runtimes/linux/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/osx/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
           "runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll": {
             "assetType": "runtime",
             "rid": "win"
@@ -4027,6 +4038,26 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
+      "System.IO.Hashing/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.IO.Packaging/4.7.0": {
         "type": "package",
         "compile": {
@@ -4161,12 +4192,12 @@
           }
         }
       },
-      "System.Management.Automation/6.1.0": {
+      "System.Management.Automation/6.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Management.Infrastructure": "1.0.0",
-          "Microsoft.PowerShell.CoreCLR.Eventing": "6.1.0",
-          "Microsoft.PowerShell.Native": "6.1.0-rc.1",
+          "Microsoft.PowerShell.CoreCLR.Eventing": "6.1.6",
+          "Microsoft.PowerShell.Native": "6.1.0",
           "Microsoft.Win32.Registry.AccessControl": "4.5.0",
           "Newtonsoft.Json": "11.0.2",
           "System.Configuration.ConfigurationManager": "4.5.0",
@@ -4174,39 +4205,39 @@
           "System.IO.FileSystem.AccessControl": "4.5.0",
           "System.Management": "4.5.0",
           "System.Security.AccessControl": "4.5.0",
-          "System.Security.Cryptography.Pkcs": "4.5.0",
+          "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.5.0",
-          "System.Text.Encoding.CodePages": "4.5.0"
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "compile": {
-          "ref/netstandard2.0/System.Management.Automation.dll": {}
+          "ref/netcoreapp2.1/System.Management.Automation.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/linux-arm/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/linux-arm/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "linux-arm"
           },
-          "runtimes/linux-x64/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/linux-x64/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "linux-x64"
           },
-          "runtimes/osx/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/osx/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "osx"
           },
-          "runtimes/win-arm/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/win-arm/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "win-arm"
           },
-          "runtimes/win-arm64/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/win-arm64/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "win-arm64"
           },
-          "runtimes/win-x64/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/win-x64/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "win-x64"
           },
-          "runtimes/win-x86/lib/netstandard2.0/System.Management.Automation.dll": {
+          "runtimes/win-x86/lib/netcoreapp2.1/System.Management.Automation.dll": {
             "assetType": "runtime",
             "rid": "win-x86"
           }
@@ -5814,36 +5845,38 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Storage.Common/12.8.0": {
-      "sha512": "2nR+kp1UfF+Ib3JHJkFf1VcVkx98ESIXoxUQ751uZ+fPtABAvA4C5JKuwLhksLVfnVMaljQRGS1BhHjrrUoz9g==",
+    "Azure.Storage.Common/12.12.0": {
+      "sha512": "Ms0XsZ/D9Pcudfbqj+rWeCkhx/ITEq8isY0jkor9JFmDAEHsItFa2XrWkzP3vmJU6EsXQrk4snH63HkW/Jksvg==",
       "type": "package",
-      "path": "azure.storage.common/12.8.0",
+      "path": "azure.storage.common/12.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.storage.common.12.8.0.nupkg.sha512",
+        "azure.storage.common.12.12.0.nupkg.sha512",
         "azure.storage.common.nuspec",
+        "azureicon.png",
         "lib/netstandard2.0/Azure.Storage.Common.dll",
-        "lib/netstandard2.0/Azure.Storage.Common.xml",
-        "pkgicon.png"
+        "lib/netstandard2.0/Azure.Storage.Common.xml"
       ]
     },
-    "Azure.Storage.Queues/12.7.0": {
-      "sha512": "SMo+h0/mvSHRXRbQWX7vIUuGgjK+Oe3EEDxDWZfSy7oshSPSwd5BpvKRhtX0Phx4JhTfYpv7dxD+HSsNEIQDng==",
+    "Azure.Storage.Queues/12.11.0": {
+      "sha512": "qpe1Gs1/2t18FoZORF3TgPTaF31RJhN5DQFgZ6ay6qKak9IztaqwKG8Lv2eZ/yhRKJNrOVnaZF4iqf7a4N57BA==",
       "type": "package",
-      "path": "azure.storage.queues/12.7.0",
+      "path": "azure.storage.queues/12.11.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.storage.queues.12.7.0.nupkg.sha512",
+        "azure.storage.queues.12.11.0.nupkg.sha512",
         "azure.storage.queues.nuspec",
+        "azureicon.png",
         "lib/netstandard2.0/Azure.Storage.Queues.dll",
         "lib/netstandard2.0/Azure.Storage.Queues.xml",
-        "pkgicon.png"
+        "lib/netstandard2.1/Azure.Storage.Queues.dll",
+        "lib/netstandard2.1/Azure.Storage.Queues.xml"
       ]
     },
     "BouncyCastle.Cryptography/2.4.0": {
@@ -6247,16 +6280,16 @@
         "lib/netstandard1.3/Iesi.Collections.xml"
       ]
     },
-    "Kentico.Xperience.Libraries/13.0.180": {
-      "sha512": "WAme67f8if8OPNvZ+88OXjglNBC4tYe6fBT2qCru6tfOarT/KRsl10VwaEgEbm9TdL5Vb+nyIc91HF40g42ziQ==",
+    "Kentico.Xperience.Libraries/13.0.181": {
+      "sha512": "r6nM9Oy8oE9j4XmLQQcjYU+P62c97wMvEOAUk1g49R1JMmXiJ+ep+2Pmx44DvGmOB2ynbJ9CviEhB51aR17R0A==",
       "type": "package",
-      "path": "kentico.xperience.libraries/13.0.180",
+      "path": "kentico.xperience.libraries/13.0.181",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LicenseAgreement.txt",
-        "kentico.xperience.libraries.13.0.180.nupkg.sha512",
+        "kentico.xperience.libraries.13.0.181.nupkg.sha512",
         "kentico.xperience.libraries.nuspec",
         "lib/net48/CMS.Activities.Loggers.dll",
         "lib/net48/CMS.Activities.Loggers.xml",
@@ -8234,17 +8267,18 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.0.0": {
-      "sha512": "TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
+    "Microsoft.NETCore.Platforms/5.0.4": {
+      "sha512": "S/AHu+d3Fk/yoWHIXNAs8N030bCf22GlXoMqLC/zK24i+VfhG0kWYtFeEv6s07b05qchNEGabwOcq49zzR8MPA==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0",
+      "path": "microsoft.netcore.platforms/5.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.5.0.4.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -8349,34 +8383,34 @@
         "microsoft.owin.security.oauth.nuspec"
       ]
     },
-    "Microsoft.PowerShell.CoreCLR.Eventing/6.1.0": {
-      "sha512": "zZbpEKy/ogCphG5VCPXFWup3PT0NXqQjoOttssH5xhICVdgb4v73TOdfku920LVto8JHeISYs6SGEtyQ/f/AmQ==",
+    "Microsoft.PowerShell.CoreCLR.Eventing/6.1.6": {
+      "sha512": "PC/URtLAqMVpJBGs/Jyw5GrEf8lqocjpQcPjek9CCrPh3qyVjCkNg8wCIwXAMvRcZXyg7GnGQAZrvQDlVHcuQQ==",
       "type": "package",
-      "path": "microsoft.powershell.coreclr.eventing/6.1.0",
+      "path": "microsoft.powershell.coreclr.eventing/6.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "microsoft.powershell.coreclr.eventing.6.1.0.nupkg.sha512",
+        "microsoft.powershell.coreclr.eventing.6.1.6.nupkg.sha512",
         "microsoft.powershell.coreclr.eventing.nuspec",
-        "ref/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/linux-arm/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/linux-x64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/osx/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/win-arm/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/win-arm64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/win-x64/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll",
-        "runtimes/win-x86/lib/netstandard2.0/Microsoft.PowerShell.CoreCLR.Eventing.dll"
+        "ref/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/linux-arm/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/linux-x64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/osx/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/win-arm/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/win-arm64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/win-x64/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll",
+        "runtimes/win-x86/lib/netcoreapp2.1/Microsoft.PowerShell.CoreCLR.Eventing.dll"
       ]
     },
-    "Microsoft.PowerShell.Native/6.1.0-rc.1": {
-      "sha512": "9veUQuLLJhhCIsiA7yGciY3sHl3hNAzLnN6YilScq/7VM6dkCU3oUXxup8SU+Uhco7ZXXyV4NBx6m1j8FqUayg==",
+    "Microsoft.PowerShell.Native/6.1.0": {
+      "sha512": "I43FuJWW71Wvv1nMxSAILHSmslZpO4InUsA9k+koZHoPXlS7dsfFhAwfCPOqk3dXsikIv9+kj8f27gBicjcvjg==",
       "type": "package",
-      "path": "microsoft.powershell.native/6.1.0-rc.1",
+      "path": "microsoft.powershell.native/6.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PSRP_version.txt",
-        "microsoft.powershell.native.6.1.0-rc.1.nupkg.sha512",
+        "microsoft.powershell.native.6.1.0.nupkg.sha512",
         "microsoft.powershell.native.nuspec",
         "runtimes/linux-arm/native/libpsl-native.so",
         "runtimes/linux-x64/native/libmi.so",
@@ -9256,10 +9290,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "NHibernate/5.2.6": {
-      "sha512": "fsRZPLgwrYy6ta2+FmxjUx20a7h0uUk5tIyVFEKAYSY7BG0Qax1lGjfspxchFn9h9gkp1zqQEWNGJoo/RaVmlg==",
+    "NHibernate/5.4.9": {
+      "sha512": "H78ypzh1T+D2BJDQRd/IYIICplspq/s8x5YhnkXFlcIhmAH0RHIMjjqiJCXSwC+gOqBKRMsmtVvkaCXZHqd76w==",
       "type": "package",
-      "path": "nhibernate/5.2.6",
+      "path": "nhibernate/5.4.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9275,18 +9309,25 @@
         "ConfigurationTemplates/SqlServerCe.cfg.xml",
         "ConfigurationTemplates/SybaseASE.cfg.xml",
         "ConfigurationTemplates/SybaseSQLAnywhere.cfg.xml",
+        "NHibernate-NuGet.png",
         "NHibernate.license.txt",
         "NHibernate.readme.md",
         "NHibernate.releasenotes.txt",
         "lib/net461/NHibernate.dll",
         "lib/net461/NHibernate.xml",
+        "lib/net48/NHibernate.dll",
+        "lib/net48/NHibernate.xml",
+        "lib/net6.0/NHibernate.dll",
+        "lib/net6.0/NHibernate.xml",
         "lib/netcoreapp2.0/NHibernate.dll",
         "lib/netcoreapp2.0/NHibernate.xml",
         "lib/netstandard2.0/NHibernate.dll",
         "lib/netstandard2.0/NHibernate.xml",
+        "lib/netstandard2.1/NHibernate.dll",
+        "lib/netstandard2.1/NHibernate.xml",
         "nhibernate-configuration.xsd",
         "nhibernate-mapping.xsd",
-        "nhibernate.5.2.6.nupkg.sha512",
+        "nhibernate.5.4.9.nupkg.sha512",
         "nhibernate.nuspec"
       ]
     },
@@ -12098,23 +12139,30 @@
         "version.txt"
       ]
     },
-    "System.DirectoryServices.Protocols/4.5.0": {
-      "sha512": "EpWC9CW2GdFiWzhWEIcXX8tMPGRdrpL+1BI4WyBYG4G1TlOuMXO3bpyLydEo5/3ThDFPzWfp0Yp0u360dGwvJQ==",
+    "System.DirectoryServices.Protocols/5.0.1": {
+      "sha512": "rqSmdHgoYL8RghMsYcwtzNWKbXdT9wHwYDIDcd9TQkRLO/ptF1Op/BTiBc/AbducFCS/PMcqpttXuzw2hp4Iyg==",
       "type": "package",
-      "path": "system.directoryservices.protocols/4.5.0",
+      "path": "system.directoryservices.protocols/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net45/_._",
         "lib/netstandard2.0/System.DirectoryServices.Protocols.dll",
+        "lib/netstandard2.0/System.DirectoryServices.Protocols.xml",
         "ref/net45/_._",
         "ref/netstandard2.0/System.DirectoryServices.Protocols.dll",
         "ref/netstandard2.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/linux/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/linux/lib/netcoreapp2.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/osx/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/osx/lib/netcoreapp2.0/System.DirectoryServices.Protocols.xml",
         "runtimes/win/lib/net45/_._",
         "runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll",
-        "system.directoryservices.protocols.4.5.0.nupkg.sha512",
+        "runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.Protocols.xml",
+        "system.directoryservices.protocols.5.0.1.nupkg.sha512",
         "system.directoryservices.protocols.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12695,6 +12743,29 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
+    "System.IO.Hashing/6.0.0": {
+      "sha512": "Rfm2jYCaUeGysFEZjDe7j1R4x6Z6BzumS/vUT5a1AA/AWJuGX71PoGB0RmpyX3VmrGqVnAwtfMn39OHR8Y/5+g==",
+      "type": "package",
+      "path": "system.io.hashing/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.IO.Hashing.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.IO.Hashing.dll",
+        "lib/net461/System.IO.Hashing.xml",
+        "lib/net6.0/System.IO.Hashing.dll",
+        "lib/net6.0/System.IO.Hashing.xml",
+        "lib/netstandard2.0/System.IO.Hashing.dll",
+        "lib/netstandard2.0/System.IO.Hashing.xml",
+        "system.io.hashing.6.0.0.nupkg.sha512",
+        "system.io.hashing.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.IO.Packaging/4.7.0": {
       "sha512": "9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
       "type": "package",
@@ -13027,22 +13098,22 @@
         "version.txt"
       ]
     },
-    "System.Management.Automation/6.1.0": {
-      "sha512": "aYRjMUp7MYxs7UcldGtQjZ98BkSTR0M2LH3l4A7C6tJgi9c0M0eo57pVMsefTySmaRIje+3FNoajGkfEJIGMzg==",
+    "System.Management.Automation/6.1.6": {
+      "sha512": "OEWVu3JvDK5f8WUFjQXzgx2v+IKNphvmdSagMOHgONcQabiOapmrXv+8ihSe95qUgYdqY8tuvEAK99xjiEIa9w==",
       "type": "package",
-      "path": "system.management.automation/6.1.0",
+      "path": "system.management.automation/6.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ref/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/linux-arm/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/linux-x64/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/osx/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/win-arm/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/win-arm64/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/win-x64/lib/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/win-x86/lib/netstandard2.0/System.Management.Automation.dll",
-        "system.management.automation.6.1.0.nupkg.sha512",
+        "ref/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/linux-arm/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/linux-x64/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/osx/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/win-arm/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/win-arm64/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/win-x64/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "runtimes/win-x86/lib/netcoreapp2.1/System.Management.Automation.dll",
+        "system.management.automation.6.1.6.nupkg.sha512",
         "system.management.automation.nuspec"
       ]
     },
@@ -16837,7 +16908,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Azure.Storage.Queues >= 12.7.0",
+      "Azure.Storage.Queues >= 12.11.0",
       "EntityFramework >= 6.2.0",
       "FsPickler.Json >= 5.3.2",
       "Microsoft.AspNet.Identity.Core >= 2.2.4",
@@ -16852,15 +16923,15 @@
       "Microsoft.SqlServer.SqlManagementObjects >= 150.18147.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
       "Microsoft.Win32.Registry >= 4.7.0",
-      "NHibernate >= 5.2.6",
+      "NHibernate >= 5.4.9",
       "NLog >= 4.6.7",
       "System.CodeDom >= 4.5.0",
       "System.Data.SqlClient >= 4.8.6",
       "System.DirectoryServices >= 4.5.0",
       "System.DirectoryServices.AccountManagement >= 4.5.0",
-      "System.DirectoryServices.Protocols >= 4.5.0",
+      "System.DirectoryServices.Protocols >= 5.0.1",
       "System.Linq.Dynamic >= 1.0.8",
-      "System.Management.Automation >= 6.1.0",
+      "System.Management.Automation >= 6.1.6",
       "System.Runtime.Serialization.Formatters >= 4.3.0",
       "System.Text.Encoding.CodePages >= 8.0.0",
       "System.Text.RegularExpressions >= 4.3.1",
@@ -16869,7 +16940,7 @@
       "csla >= 5.5.4",
       "dotnetnuke.core >= 10.0.1",
       "fastJSON >= 2.4.0.4",
-      "kentico.xperience.libraries >= 13.0.180",
+      "kentico.xperience.libraries >= 13.0.181",
       "log4net >= 2.0.10",
       "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.15",
       "microsoft.aspnetcore.app.runtime.win-x86 >= 6.0.27",
@@ -16927,7 +16998,7 @@
         "dependencies": {
           "Azure.Storage.Queues": {
             "target": "Package",
-            "version": "[12.7.0, )"
+            "version": "[12.11.0, )"
           },
           "EntityFramework": {
             "target": "Package",
@@ -16988,7 +17059,7 @@
           },
           "NHibernate": {
             "target": "Package",
-            "version": "[5.2.6, )"
+            "version": "[5.4.9, )"
           },
           "NLog": {
             "target": "Package",
@@ -17012,7 +17083,7 @@
           },
           "System.DirectoryServices.Protocols": {
             "target": "Package",
-            "version": "[4.5.0, )"
+            "version": "[5.0.1, )"
           },
           "System.Linq.Dynamic": {
             "target": "Package",
@@ -17020,7 +17091,7 @@
           },
           "System.Management.Automation": {
             "target": "Package",
-            "version": "[6.1.0, )"
+            "version": "[6.1.6, )"
           },
           "System.Runtime.Serialization.Formatters": {
             "target": "Package",
@@ -17056,7 +17127,7 @@
           },
           "kentico.xperience.libraries": {
             "target": "Package",
-            "version": "[13.0.180, )"
+            "version": "[13.0.181, )"
           },
           "log4net": {
             "target": "Package",
@@ -17118,7 +17189,7 @@
     {
       "code": "NU1102",
       "level": "Error",
-      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
+      "message": "Nie można znaleźć pakietu youtubedlsharp w wersji (>= 1.2.2)\r\n  - Znalezione wersje w nuget.org: 19 [ Najbliższa wersja: 1.1.2 ]\r\n  - Znalezione wersje w Microsoft Visual Studio Offline Packages: 0",
       "libraryId": "youtubedlsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17127,68 +17198,18 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
+      "message": "Nie można znaleźć pakietu opcfoundation.netstandard.opc.ua4. W źródłach nie istnieją pakiety z tym identyfikatorem: Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
     },
     {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Azure.Storage.Queues' 12.7.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
-      "libraryId": "Azure.Storage.Queues",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 6.0.27 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.win-x86” 6.0.27 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NHibernate' 5.2.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
-      "libraryId": "NHibernate",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.DirectoryServices.Protocols' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9cxh-gqpx-qc5m",
-      "libraryId": "System.DirectoryServices.Protocols",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Management.Automation' 6.1.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5frh-8cmj-gc59",
-      "libraryId": "System.Management.Automation",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Management.Automation' 6.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-62gw-3rmj-wmp2",
-      "libraryId": "System.Management.Automation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -17197,7 +17218,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „DotNetNuke.Core 10.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17207,7 +17228,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Instrumentation 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „DotNetNuke.Instrumentation 10.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "DotNetNuke.Instrumentation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17217,7 +17238,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „EntityFramework 6.2.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17227,7 +17248,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17237,7 +17258,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.EntityFramework 2.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17247,7 +17268,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.Identity.Owin 2.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.Identity.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17257,7 +17278,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.AspNet.WebApi.Core 5.2.7” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17267,7 +17288,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17277,7 +17298,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17287,7 +17308,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17297,7 +17318,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.Cookies 4.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security.Cookies 4.2.2” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security.Cookies",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17307,7 +17328,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.OAuth 3.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Microsoft.Owin.Security.OAuth 3.0.1” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.Owin.Security.OAuth",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17317,7 +17338,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „Owin 1.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -17327,7 +17348,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Linq.Dynamic 1.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „System.Linq.Dynamic 1.0.8” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „.NETCoreApp,Version=v3.1”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "System.Linq.Dynamic",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
