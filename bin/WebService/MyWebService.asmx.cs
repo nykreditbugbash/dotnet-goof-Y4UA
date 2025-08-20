@@ -21,14 +21,24 @@ namespace NETMVCBlot.Controllers.WebService
         [WebMethod]
         public string ReadFile(string fileName)
         {
-            // CTSECISSUE:DirectoryTraversal
-            return File.ReadAllText(@"D:\wwwroot\reports\" + fileName);
+            // Validate fileName to prevent directory traversal
+            if (fileName.Contains("..") || Path.IsPathRooted(fileName) || fileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+            {
+                throw new ArgumentException("Invalid file name.");
+            }
+            string fullPath = Path.Combine(@"D:\wwwroot\reports\", fileName);
+            return File.ReadAllText(fullPath);
         }
 
         public string Helper(string fileName)
         {
-            // CTSECNONISSUE:DirectoryTraversal
-            return File.ReadAllText(@"D:\wwwroot\reports\" + fileName);
+            // Validate fileName to prevent directory traversal
+            if (fileName.Contains("..") || Path.IsPathRooted(fileName) || fileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+            {
+                throw new ArgumentException("Invalid file name.");
+            }
+            string fullPath = Path.Combine(@"D:\wwwroot\reports\", fileName);
+            return File.ReadAllText(fullPath);
         }
     }
 }

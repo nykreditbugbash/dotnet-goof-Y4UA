@@ -21,19 +21,35 @@ namespace NETMVCBlot.Controllers
             if (!IBValidator.IsValidFileName(fileName))
                 return new HttpNotFoundResult();
 
-            // CTSECISSUE:DirectoryTraversal
-            return new FilePathResult(@"D:\wwwroot\reports\" + fileName, "application/pdf");
+            // Prevent directory traversal by getting only the file name
+            var safeFileName = System.IO.Path.GetFileName(fileName);
+            var filePath = System.IO.Path.Combine(@"D:\wwwroot\reports\", safeFileName);
+
+            if (!System.IO.File.Exists(filePath))
+                return new HttpNotFoundResult();
+
+            return new FilePathResult(filePath, "application/pdf");
         }
 
         public String DownloadAsString(string fileName)
         {
-            // CTSECISSUE:DirectoryTraversal
-            return System.IO.File.ReadAllText(@"D:\wwwroot\reports\" + fileName);
+            // Prevent directory traversal by getting only the file name
+            var safeFileName = System.IO.Path.GetFileName(fileName);
+            var filePath = System.IO.Path.Combine(@"D:\wwwroot\reports\", safeFileName);
+
+            if (!System.IO.File.Exists(filePath))
+                return null;
+
+            return System.IO.File.ReadAllText(filePath);
         }
 
         public JsonResult ExecuteProcess(string argument)
         {
-            // CTSECISSUE: OSCommandInjection
+            // Prevent OS command injection by allowing only safe arguments (e.g., IP addresses or hostnames)
+            if (string.IsNullOrWhiteSpace(argument) || argument.Any(c => !char.IsLetterOrDigit(c) && c != '.' && c != '-'))
+            {
+                return Json(new { error = "Invalid argument" }, JsonRequestBehavior.AllowGet);
+            }
             Process.Start("cmd.exe", "/C ping.exe " + argument);
             return null;
         }

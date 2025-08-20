@@ -18,35 +18,37 @@ namespace NETWebFormsBlot
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            // CTSECISSUE:DirectoryTraversal
-            FileInfo fi = new FileInfo(uploadFile.PostedFile.FileName);
-            if (uploadFile.PostedFile.FileName != fi.Name)
+            // Sanitize file name to prevent directory traversal
+            string originalFileName = Path.GetFileName(uploadFile.PostedFile.FileName);
+            if (string.IsNullOrWhiteSpace(originalFileName) || originalFileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
             {
-                // throw exception
+                // Invalid file name, handle error
+                throw new InvalidOperationException("Invalid file name.");
             }
+
+            // Optionally, restrict allowed file extensions
+            string[] allowedExtensions = { ".txt", ".jpg", ".png", ".pdf" };
+            string fileExtension = Path.GetExtension(originalFileName).ToLowerInvariant();
+            if (!allowedExtensions.Contains(fileExtension))
+            {
+                throw new InvalidOperationException("File type not allowed.");
+            }
+
+            string safeDirectory = @"C:\uploaded_files\";
+            string safePath = Path.Combine(safeDirectory, originalFileName);
 
             Stream stream = uploadFile.FileContent;
             if (stream != null)
             {
-                // nearly all File.Write* and related methods are sinks
+                // Save the uploaded file securely
+                File.WriteAllBytes(safePath, uploadFile.FileBytes);
 
-                // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllBytes(@"C:\uploaded_files\" + uploadFile.PostedFile.FileName, uploadFile.FileBytes);
-
-                // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllText(@"C:\uploaded_files\" + uploadFile.PostedFile.FileName, "");
-
-                string mappedAbsolutePath = Server.MapPath(uploadFile.PostedFile.FileName);
-                // The above method returns a mapped absolute path, yes, but that's not sanitization
-                // Still an attacker can upload or maybe even overwrite a valid file in the directory A Web application that resides.
-                // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllText(mappedAbsolutePath, "");
-
-                // CTSECISSUE:PossibleInsecureFileUpload
-                byte [] buffer = ReadFully(stream);
+                // If you need to process the file content as text:
+                byte[] buffer = ReadFully(stream);
                 string converted = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
 
-                File.WriteAllText(uploadFile.PostedFile.FileName, converted);
+                // Optionally, write the converted content to a new file
+                // File.WriteAllText(safePath, converted);
             }
         }
 
