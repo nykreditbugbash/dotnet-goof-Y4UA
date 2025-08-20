@@ -965,7 +965,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.0": {
+      "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.10": {
         "type": "package"
       },
       "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0": {
@@ -7489,10 +7489,10 @@
         "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.0": {
-      "sha512": "mUA3OfRmS059yob8ZKeaDjkFlGT1zveiWx5O/UXxYLrsQNBY6HINIlDFvzPOZj8Uesp2fCNOPflMucMAFcqlPg==",
+    "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.10": {
+      "sha512": "njU8gh4hZis0MeVrsQedb8PPKxa3XWybiOXXpEPOekkahwZ8hsNAeDxSZeE513QpZWZOclAT3fXEO7r/lQRryA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.runtime.linux-x64/8.0.0",
+      "path": "microsoft.aspnetcore.app.runtime.linux-x64/8.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7501,7 +7501,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "data/PlatformManifest.txt",
         "data/RuntimeList.xml",
-        "microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
         "microsoft.aspnetcore.app.runtime.linux-x64.nuspec",
         "runtimes/linux-x64/lib/net8.0/Microsoft.AspNetCore.Antiforgery.dll",
         "runtimes/linux-x64/lib/net8.0/Microsoft.AspNetCore.App.deps.json",
@@ -18023,7 +18023,7 @@
       "fastJSON >= 2.4.0.4",
       "kentico.xperience.libraries >= 13.0.178",
       "log4net >= 2.0.8",
-      "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.0",
+      "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.10",
       "microsoft.aspnetcore.app.runtime.win-x86 >= 3.0.0",
       "opcfoundation.netstandard.opc.ua4 >= 1.3.352.12",
       "powershell >= 7.2.18",
@@ -18208,7 +18208,7 @@
           },
           "microsoft.aspnetcore.app.runtime.linux-x64": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.10, )"
           },
           "microsoft.aspnetcore.app.runtime.win-x86": {
             "target": "Package",
@@ -18451,47 +18451,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-chfc-9w6m-75rf",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-hhc7-x9w4-cw47",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.10 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

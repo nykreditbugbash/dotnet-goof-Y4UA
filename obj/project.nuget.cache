@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QXGn8Ene2oA=",
+  "dgSpecHash": "LvpEV/T5S9g=",
   "success": false,
   "projectFilePath": "C:\\Users\\Marcin Kraska\\Documents\\Repos\\dotnet-goof-Y4UA\\dotNet-goof.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.identity.owin\\2.2.2\\microsoft.aspnet.identity.owin.2.2.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
-    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.0\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.10\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.0.0\\microsoft.aspnetcore.app.runtime.win-x86.3.0.0.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.1.2\\microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
     "C:\\Users\\Marcin Kraska\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\2.1.1\\microsoft.aspnetcore.razor.language.2.1.1.nupkg.sha512",
@@ -480,47 +480,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-chfc-9w6m-75rf",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane krytyczna luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.0 ma znane umiarkowana luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-hhc7-x9w4-cw47",
+      "message": "Pakiet „Microsoft.AspNetCore.App.Runtime.linux-x64” 8.0.10 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
