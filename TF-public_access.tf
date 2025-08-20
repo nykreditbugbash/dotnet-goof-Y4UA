@@ -64,6 +64,10 @@ resource "aws_mq_broker" "mq" {
     username = "ExampleUser"
     password = "MindTheGap"
   }
+
+  logs {
+    general = true
+  }
 }
 
 resource "aws_neptune_cluster_instance" "neptune" {
@@ -94,4 +98,7 @@ resource "aws_redshift_cluster" "redshift" {
   cluster_type       = "single-node"
   publicly_accessible = false
   encrypted          = true
+  logging {
+    enable = true
+  }
 }
