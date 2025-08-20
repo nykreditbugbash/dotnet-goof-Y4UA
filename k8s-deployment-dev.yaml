@@ -43,10 +43,10 @@ spec:
               cpu: 100
               memory: 100
           securityContext:
+            runAsUser: 10002
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
             runAsNonRoot: true
-            runAsUser: 10001
             capabilities:
               drop:
                 - ALL

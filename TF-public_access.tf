@@ -66,7 +66,7 @@ resource "aws_mq_broker" "mq" {
   }
 
   logs {
-    general = true
+    general           = true
   }
 }
 
