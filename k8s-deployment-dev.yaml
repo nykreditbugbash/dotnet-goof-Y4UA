@@ -42,6 +42,16 @@ spec:
             limits:
               cpu: 100
               memory: 100
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 10001
+            capabilities:
+              drop:
+                - ALL
+              add:
+                - CAP_SYS_ADMIN            
         - name: snyky2
           image: "garethr/snyky2:latest"
           imagePullPolicy: Always
